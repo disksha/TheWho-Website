@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+#main {
+    position: relative;
+    overflow: hidden;
+
+}
+
+#page>h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #96fcca;
+    font-size: 300px;
+}
+
+#page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0f3484;
+    /* background-image: url("images/giphy.gif"); */
+}
+
+#page>img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+#nav {
+    height: 7%;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+#nav>img {
+    width: 3%;
+}
+
+#center {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+#center>a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+#page1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0f3484;
+    /* background-image: url("images/giphy.gif"); */
+    text-align: center;
+}
+
+#page1>h6 {
+    position: relative;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 20px;
+
+}
+
+#page1>h4 {
+    position: relative;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+
+}
+
+#page1>h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+#page1>h6::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 24px;
+    height: 7px;
+    background-color: #96fcca;
+    transform: skewY(-16deg);
+    /* translate: sk; */
+    margin: -3.5px -12px;
+
+
+
+}
+
+#page2 {
+    background-color: #0f3484;
+    /* background-image: url("images/giphy.gif"); */
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#page2>#image1 {
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    left: -25%;
+    top: 20%;
+
+}
+
+#page2>#image1>img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+#page2>#image2 {
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    right: -25%;
+    top: -10%;
+
+}
+
+#page2>#image2>img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+#page2>H4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+#page2>h4::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 24px;
+    height: 7px;
+    background-color: #96fcca;
+    transform: skewY(-16deg);
+    translate: sk;
+    margin: -3.5px -12px;
+
+}
+
+#page2>H2 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+#page3 {
+    height: 100vh;
+    /* width: 100vw; */
+    background-color: #0f3484;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.cursor {
+    z-index: 999;
+    position: absolute;
+    background: yellow;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px yellow,
+        0 0 60px yellow,
+        0 0 100px yellow;
+    /* #2696e8, */
+    animation: colors 5s infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#page3 h1 {
+    color: white;
+    font-size: 500px;
+}
+
+@keyframes colors {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.cursor::before {
+    content: '';
+    position: absolute;
+    background: yellow;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+}
